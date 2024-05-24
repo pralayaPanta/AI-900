@@ -19,9 +19,9 @@
 - **Natural language processing** - interpretting wrriten or spoken language and its response
 - **Document intelligence** - managing processing and using high volumes of data forms and documents
 - **Knowledge mining** - extract information unstructured data to create knowledge store
-- **Generative AI **- create original content in natural language, image, code and more
+- **Generative AI**- create original content in natural language, image, code and more
 
-# Topic: Fundamental of Machine Learning
+#### Machine Learning
 
 How it works:
 - Machines learn from data, capturing the relationship between data
@@ -48,4 +48,39 @@ How it works:
 - Face recognition
 - Optical character recognition OCR
 
+#### Natural Language Processing NPL
+Enables
+- analyze and interpret texts
+- interpret and translate spoken or written language
+- synthesize speech responses
+- interpret commands and determine appropriate actions
+  
+##### NPL services in Azure
+- Azure AI Language
+- Azure AI Speech
+- Azure Speech Studio featuers AI Language and AI Speech in azure.
+  
+#### Knowledge minning in Azure
+- **Azure AI Document Intelligence** - data collection from scanned documents
+- **Azire AI Search** - search solution that has tools for building indexes
+  
+#### Generative AI in Azure
+- Azure OpenAI Service - solution for deploying customising, and hosting generative AI models.
+
+#### Challenge or Risk of AI
+- Bias can affect results
+- Erros may cause harm
+- Data could be exposed
+- Solution may not work for everyone
+- Users must trust complex system
+- Who's liable for AI driven decisions
+
+#### Responsible AI
+- Fairness
+- Reliability and safety
+- Privacy and security
+- Inclusiveness
+- Transparency
+- Accountability
+- 
 # Topic: Fundamental of Azure AI services
