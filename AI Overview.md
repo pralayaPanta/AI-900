@@ -1,18 +1,22 @@
 - [Topic: Fundamental of AI Concepts](#topic-fundamental-of-ai-concepts)
-      - [key workloads](#key-workloads)
-- [Topic: Fundamental of Machine Learning](#topic-fundamental-of-machine-learning)
+    - [Key workloads](#key-workloads)
+    - [Machine Learning](#machine-learning)
       - [Machine learning in MS Azure](#machine-learning-in-ms-azure)
-      - [Computer vision](#computer-vision)
+    - [Computer vision](#computer-vision)
         - [Computer vision models](#computer-vision-models)
         - [Computer vision services in MS Azure](#computer-vision-services-in-ms-azure)
-- [Topic: Fundamental of Azure AI services](#topic-fundamental-of-azure-ai-services)
-
+    - [Natural Language Processing NPL](#natural-language-processing-npl)
+        - [NPL services in Azure](#npl-services-in-azure)
+    - [Knowledge minning in Azure](#knowledge-minning-in-azure)
+    - [Generative AI in Azure](#generative-ai-in-azure)
+    - [Challenge or Risk of AI](#challenge-or-risk-of-ai)
+    - [Responsible AI](#responsible-ai)
 
 
 
 # Topic: Fundamental of AI Concepts
 
-### key workloads
+### Key workloads
 
 - **Machine learning -** foundation of AI, way of teaching computer model to make predictions
 - **Computer vision -** interpretting the world through cameras, video, and images
@@ -71,7 +75,7 @@ Enables
 - Bias can affect results
 - Erros may cause harm
 - Data could be exposed
-- Solution may not work for everyone
+- Soluton may not work for everyone
 - Users must trust complex system
 - Who's liable for AI driven decisions
 
@@ -82,12 +86,4 @@ Enables
 - Inclusiveness
 - Transparency
 - Accountability
-  
-# Topic: Fundamental of Azure AI services
 
-Fundamental concept - use data from past observations to predict unknown outcomes or values.
-
-Machine Learning as a function
-  - Machine learning encapsulates _function_ to calculate output
-  - Process of defining the function is known as _training_
-  - _Inferencing_ predicts new values.
