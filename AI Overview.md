@@ -12,7 +12,7 @@
 
 # Topic: Fundamental of AI Concepts
 
-#### key workloads
+### key workloads
 
 - **Machine learning -** foundation of AI, way of teaching computer model to make predictions
 - **Computer vision -** interpretting the world through cameras, video, and images
@@ -21,7 +21,7 @@
 - **Knowledge mining** - extract information unstructured data to create knowledge store
 - **Generative AI**- create original content in natural language, image, code and more
 
-#### Machine Learning
+### Machine Learning
 
 How it works:
 - Machines learn from data, capturing the relationship between data
@@ -32,7 +32,7 @@ How it works:
 - **Data metric visualization:** analyze and optimize your experiments with visualization.
 - **Notebooks:** write and run your own code in managed Jupyter Notebook servers 
 
-#### Computer vision
+### Computer vision
 - area of AI that deals with visual processing
 
 ##### Computer vision models
@@ -48,7 +48,7 @@ How it works:
 - Face recognition
 - Optical character recognition OCR
 
-#### Natural Language Processing NPL
+### Natural Language Processing NPL
 Enables
 - analyze and interpret texts
 - interpret and translate spoken or written language
@@ -60,14 +60,14 @@ Enables
 - Azure AI Speech
 - Azure Speech Studio featuers AI Language and AI Speech in azure.
   
-#### Knowledge minning in Azure
+### Knowledge minning in Azure
 - **Azure AI Document Intelligence** - data collection from scanned documents
 - **Azire AI Search** - search solution that has tools for building indexes
   
-#### Generative AI in Azure
+### Generative AI in Azure
 - Azure OpenAI Service - solution for deploying customising, and hosting generative AI models.
 
-#### Challenge or Risk of AI
+### Challenge or Risk of AI
 - Bias can affect results
 - Erros may cause harm
 - Data could be exposed
@@ -75,12 +75,12 @@ Enables
 - Users must trust complex system
 - Who's liable for AI driven decisions
 
-#### Responsible AI
+### Responsible AI
 - Fairness
 - Reliability and safety
 - Privacy and security
 - Inclusiveness
 - Transparency
 - Accountability
-- 
+  
 # Topic: Fundamental of Azure AI services
