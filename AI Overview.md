@@ -86,4 +86,3 @@ Enables
 - Inclusiveness
 - Transparency
 - Accountability
-
