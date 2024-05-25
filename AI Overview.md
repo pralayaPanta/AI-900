@@ -84,3 +84,10 @@ Enables
 - Accountability
   
 # Topic: Fundamental of Azure AI services
+
+Fundamental concept - use data from past observations to predict unknown outcomes or values.
+
+Machine Learning as a function
+  - Machine learning encapsulates _function_ to calculate output
+  - Process of defining the function is known as _training_
+  - _Inferencing_ predicts new values.
