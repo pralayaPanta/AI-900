@@ -25,7 +25,8 @@ Area of AI focusing on creating solutions that enable AI applications to see the
 
 - During the training process difference between predicted and actual class score called loss in model is calculated. To reduce the loss weights is optimised in each of the iteration. 
 
-- Object detection models combine CNN feature extraction layers with the identification of regions of interest in images to locate multiple classes of object in the same image.
+- **Object detection** models combine CNN feature extraction layers with the identification of regions of interest in images to locate multiple classes of object in the same image.
+    - Object detection provides the ability to generate bounding boxes that identify the locations of different types of objects in an image, including the bounding box coordinates, designating the location of the object in the image.
 
 ### Multi Modal Models
 - Model is trained using a large volume of captioned images with no fixed labels
@@ -40,6 +41,7 @@ Area of AI focusing on creating solutions that enable AI applications to see the
   - **Azure AI Vision**
       - specific resource for vision service
       - user this if you do not intend to use other azure AI service
+      - supports the celebrities and landmarks specialized domain models.
   
   - **Azure AI Services**
       - general resources that includes other AI services as well
@@ -51,6 +53,7 @@ Area of AI focusing on creating solutions that enable AI applications to see the
       - Detection of thousands of common objects in images
       - Tagging visual features in images
   - If the provided models do not meet the requirement, you can use the service to train a custom model for image classification or object detection
+    - **Azure AI Custom Vision** is an image recognition service that allows you to build and deploy your own image models. 
   
 # Fundamental of Facial Recognition
 

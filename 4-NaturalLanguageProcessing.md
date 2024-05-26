@@ -9,6 +9,7 @@
 - [Fundamentals of conversational language understanding](#fundamentals-of-conversational-language-understanding)
     - [Azure resource for converstaional language understanding](#azure-resource-for-converstaional-language-understanding)
 - [Fundamentals of Azure AI Speech](#fundamentals-of-azure-ai-speech)
+    - [Azure AI Translator](#azure-ai-translator)
     - [Azure resources for Azure AI Speech](#azure-resources-for-azure-ai-speech)
 - [Common NLP tasks supported by language models include:](#common-nlp-tasks-supported-by-language-models-include)
 
@@ -22,7 +23,9 @@
         - text normalisation
         - stop word removal
         - n-grams muti-term phrases
-        - stemming is a technique in which algorithm are applied to consolidate words before counting them
+          - extends frequency analysis to include mlti term phrases
+        - *stemming* is a technique in which algorithm are applied to consolidate words before counting them
+          - Lemmatization or stemming, normalises words before counting them
 
 ### Frequency analysis
   - counting the number of occurrences of each token
@@ -37,6 +40,7 @@
 
 ### Semantic language models
   - Encoding of language tokens as vectors (multi valued arrays of numbers) is known as embedding
+    - ***Vectorization*** captures semantic relationships between words by assigning them to locations in n-dimensional space.
 
 
 ### Azure AI Language Features
@@ -45,6 +49,7 @@
 - ***Personal identifying information (PII) detection*** - identifies personally sensitive information, including personal health information (PHI).
 - ***Language detection***-  identifies the language of the text and returns a language code such as "en" for English.
 - ***Sentiment analysis and opinion mining*** - identifies whether text is positive or negative.
+      - evaluates text and returns sentiment scores and labels for each sentence
 - ***Summarization*** - summarizes text by identifying the most important information.
 - ***Key phrase extraction*** - lists the main concepts from unstructured text.
 
@@ -89,6 +94,21 @@
                -  real-time transcription allows to transcribe text in audio streams
                -  batch transcription transcribe to text from stored on a file share, a remote server, or even on Azure Storage.
          -  The Text to speech API
+
+### Azure AI Translator
+   - cloud based service that uses AI to reliably translate text and documents between languages in near real time.
+   - 90 languages and dialects
+   - uses Neural Machine Translation
+   - can be personalised using Custom glossaries and Custom translation to increase fluency and readability
+   - services and features
+       - text to text translation
+       - document translation
+       - custom translation
+       - automatic langauge detection
+       - transliteration
+       - dictionaries
+       - profanity filters
+   - Translator's text translation service uses a JSON-based Web API with text sent as strings.
 
 ### Azure resources for Azure AI Speech
 - A Speech resource - choose this resource type if you only plan to use Azure AI Speech, or if you want to manage access and billing for the resource separately from other services.

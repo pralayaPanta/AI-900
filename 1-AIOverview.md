@@ -9,6 +9,7 @@
         - [NPL services in Azure](#npl-services-in-azure)
     - [Knowledge minning in Azure](#knowledge-minning-in-azure)
     - [Generative AI in Azure](#generative-ai-in-azure)
+    - [Azure AI Content Moderator](#azure-ai-content-moderator)
     - [Challenge or Risk of AI](#challenge-or-risk-of-ai)
     - [Responsible AI](#responsible-ai)
 
@@ -41,19 +42,22 @@ How it works:
 
 ##### Computer vision models
 - image classification - classify images based on contents
-- object detection - classify individual objects within an image
+- object detection - classify individual objects within an image and and identify their location with a bounding box.
 - semantic segmentation - classify individual pixels
+    - provides the ability to classify individual pixels in an image depending on the object that they represent.
 - image analysis - model to extract information from images
 - face detection and recognition - locates human faces in an image
 - optioncal character recognition OCR - detect and read text in images
 
 ##### Computer vision services in MS Azure
 - Image Analysis
+      - capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
 - Face recognition
+      - capabilities that enable you to build face detection and facial recognition solutions.
 - Optical character recognition OCR
+      - capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
 
 ### Natural Language Processing NPL
-Enables
 - analyze and interpret texts
 - interpret and translate spoken or written language
 - synthesize speech responses
@@ -70,6 +74,9 @@ Enables
   
 ### Generative AI in Azure
 - Azure OpenAI Service - solution for deploying customising, and hosting generative AI models.
+
+### Azure AI Content Moderator 
+- an Azure AI Services service that is used to check text, image, and video content for material that is potentially offensive.
 
 ### Challenge or Risk of AI
 - Bias can affect results

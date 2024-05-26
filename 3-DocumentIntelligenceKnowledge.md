@@ -17,6 +17,8 @@
 - _Document analysis_ is the ability to extract text, layout, and key value pairs
 - To use Azure AI Document Intelligence, create either a Document Intelligence or Azure AI services resource in your Azure subscription.
   
+- Data mining workloads primarily focus on the searching and indexing of data. 
+  
 ### Azure AI Document Intelligence Models
 
 - Prebuilt Model - have been built to process common doc type and extracts specific field that are important.
