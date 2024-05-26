@@ -1,4 +1,14 @@
 
+Table of Content
+- [Fundamental of Computer Vision](#fundamental-of-computer-vision)
+    - [Convolutional Neural Networks CNNs](#convolutional-neural-networks-cnns)
+    - [Multi Modal Models](#multi-modal-models)
+    - [Azure Resources for Azure AI Vision service](#azure-resources-for-azure-ai-vision-service)
+- [Fundamental of Facial Recognition](#fundamental-of-facial-recognition)
+    - [Face analysis](#face-analysis)
+    - [Azure for Face Analysis](#azure-for-face-analysis)
+- [Fundamental of Optical Character Recognition](#fundamental-of-optical-character-recognition)
+    - [Azure AI Vision OCR Engine](#azure-ai-vision-ocr-engine)
 
 
 # Fundamental of Computer Vision
