@@ -1,6 +1,11 @@
 # Azure AI Fundamentals AI-900
 
-Link to Official: [AI-900](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/)
+
+# Official MS Links
+Link to Official Exam Page: [AI-900](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/)
+
+Explore: [Link to Official Labs](https://microsoftlearning.github.io/mslearn-ai-fundamentals/)
+
 
 
 # Topics in AZ-900
