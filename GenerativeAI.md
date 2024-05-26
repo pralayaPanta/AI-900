@@ -1,3 +1,13 @@
+- [Fundamental of Generative AI](#fundamental-of-generative-ai)
+    - [What is Generative AI?](#what-is-generative-ai)
+    - [Language Models](#language-models)
+    - [Transformer models](#transformer-models)
+    - [Copilots](#copilots)
+    - [Copilot Studio](#copilot-studio)
+    - [Azure AI Studio](#azure-ai-studio)
+- [Azure OpenAI Service](#azure-openai-service)
+    - [Using Azure OpenAI](#using-azure-openai)
+- [Responsible GenAI](#responsible-genai)
 
 
 
@@ -65,3 +75,38 @@
 ### Azure AI Studio
   - PaaS development portal for professional software developer that gives full control over the language model
   - an define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services.
+
+
+# Azure OpenAI Service
+  - patnership between Microsoft and OpenAI
+  - service combines Azure's enterprise-grade capabilities with OpenAI's generative AI model capabilities
+  - four components
+      - pre-trained generative AI models
+      - customisation capabilities; fine tune AI models
+      - bult-in tools to detect and mitigate harmful use cases
+      - enterpise-grade security with RBAC and private networks
+  - supports generative AI workloads:
+      - Generative Natural Language
+      - Generating Code
+      - Generating Image
+  - Azure AI Language service can be used for widely known use-cases that require minimal tuning.
+  - Azure OpenAI Service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research.
+
+### Using Azure OpenAI
+  - Can be used through REST APIs, Python SDK, or the web-based interface
+  - Azure OpenAI model include
+      - GPT4
+      - GPT3.5
+      - DALL-E
+  - Playground can be used for experimenting with OpenAI models
+      - Completion can be used to type prompts, configure parameters, and see response
+      - Chat can be used to setup assitance to instruct the model about how it should behave
+
+
+# Responsible GenAI
+
+- Four stage process to develop and implement a plan for responsible AI
+    1. Identify potential harm
+    2. Measure the presence of harms
+    3. Mitigate the harms
+    4. Operate the solution responsibly
