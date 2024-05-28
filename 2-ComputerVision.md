@@ -1,6 +1,7 @@
 
 Table of Content
 - [Fundamental of Computer Vision](#fundamental-of-computer-vision)
+        - [Review Computer vision models](#review-computer-vision-models)
     - [Convolutional Neural Networks CNNs](#convolutional-neural-networks-cnns)
     - [Multi Modal Models](#multi-modal-models)
     - [Azure Resources for Azure AI Vision service](#azure-resources-for-azure-ai-vision-service)

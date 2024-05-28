@@ -9,6 +9,7 @@
 - [Fundamentals of conversational language understanding](#fundamentals-of-conversational-language-understanding)
     - [Azure resource for converstaional language understanding](#azure-resource-for-converstaional-language-understanding)
 - [Fundamentals of Azure AI Speech](#fundamentals-of-azure-ai-speech)
+    - [Use speech in application](#use-speech-in-application)
     - [Azure AI Translator](#azure-ai-translator)
     - [Azure resources for Azure AI Speech](#azure-resources-for-azure-ai-speech)
 - [Common NLP tasks supported by language models include:](#common-nlp-tasks-supported-by-language-models-include)
