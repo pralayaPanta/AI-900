@@ -15,6 +15,15 @@ Table of Content
 
 Area of AI focusing on creating solutions that enable AI applications to see the world and make sense of it.
 
+##### Review Computer vision models
+- _image classification_ - classify images based on contents
+- _object detection_ - classify individual objects within an image and and identify their location with a bounding box.
+- _semantic segmentation_ - classify individual pixels
+      - provides the ability to classify individual pixels in an image depending on the object that they represent.
+- _image analysis_ - model to extract information from images
+- _face detection and recognition_ - locates human faces in an image
+- _optioncal character recognition OCR_ - detect and read text in images
+
 ### Convolutional Neural Networks CNNs
 - CNNs user filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
 - How does CNN for an image classification model work:
@@ -27,6 +36,7 @@ Area of AI focusing on creating solutions that enable AI applications to see the
 
 - **Object detection** models combine CNN feature extraction layers with the identification of regions of interest in images to locate multiple classes of object in the same image.
     - Object detection provides the ability to generate bounding boxes that identify the locations of different types of objects in an image, including the bounding box coordinates, designating the location of the object in the image.
+    - _Image classification_ is a machine learning based form of computer vision in which a model is trained to categorize images based on the primary subject matter they contain. _Object detection_ goes further than this to classify individual objects within the image, and to return the coordinates of a bounding box that indicates the object's location.
 
 ### Multi Modal Models
 - Model is trained using a large volume of captioned images with no fixed labels

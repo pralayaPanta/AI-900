@@ -88,12 +88,33 @@
       -  It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. 
       -  These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
 -  ***Azure AI Speech*** provides speech to text and text to speech capabilities through speech recognition and synthesis. 
-   -  includes following API
+   -  includes following:
          -  The Speech to text API
+               -  convert audio to text from a range of sources, including microphones, audio files, and blob storage. 
                -  types: real-time transcription and batch transcription
                -  real-time transcription allows to transcribe text in audio streams
                -  batch transcription transcribe to text from stored on a file share, a remote server, or even on Azure Storage.
          -  The Text to speech API
+               -  convert input text into human like synthesized speech
+               -  neural voice powered by deep neural networks
+                     -  prebuilt neural voice
+                     -  custom neural voice
+         -  Speaker recognition
+         -  Speech translation         -  
+         -  Pronunciation assessment
+         -  Intent recognition
+
+### Use speech in application
+   - Speech Studio
+       - UI based tools for building and integrating features from Azure AI speech service.
+       - no code approach
+   - SPeech CLI
+       - command line tools for using Speech serivce
+       - most feature in SDK are available in CLI
+   - Speech SDK
+       - available in many programming languages and across all platforms
+       - if cant use SDK, use REST APIs
+
 
 ### Azure AI Translator
    - cloud based service that uses AI to reliably translate text and documents between languages in near real time.
