@@ -13,22 +13,19 @@
     - [Challenge or Risk of AI](#challenge-or-risk-of-ai)
     - [Responsible AI](#responsible-ai)
 
-
-
 # Topic: Fundamental of AI Concepts
 
 ### Key workloads
-
 - **Machine learning -** foundation of AI, way of teaching computer model to make predictions
 - **Computer vision -** interpretting the world through cameras, video, and images
 - **Natural language processing** - interpretting wrriten or spoken language and its response
+      - determining whether a review is  positive or negative 
+      - sentiment analysis
 - **Document intelligence** - managing processing and using high volumes of data forms and documents
 - **Knowledge mining** - extract information unstructured data to create knowledge store
 - **Generative AI**- create original content in natural language, image, code and more
 
 ### Machine Learning
-
-How it works:
 - Machines learn from data, capturing the relationship between data
 
 #### Machine learning in MS Azure
@@ -88,8 +85,11 @@ How it works:
 
 ### Responsible AI
 - Fairness
+    - Example: The system must not discriminate based on gender and race
 - Reliability and safety
-- Privacy and security
+- Privacy and security 
+    - Example: Personal data must be visible only to approved
 - Inclusiveness
 - Transparency
+    - Example: When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be explainable.
 - Accountability
