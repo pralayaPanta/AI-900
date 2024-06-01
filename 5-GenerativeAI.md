@@ -76,6 +76,12 @@
   - PaaS development portal for professional software developer that gives full control over the language model
   - an define prompt flows that orchestrate conversation flow and integrate your own data augmentation and prompt engineering logic, and you can deploy the resulting copilot service in the cloud and consume it from custom-developed apps and services.
 
+### GPT Models
+  -   Generative pre-trained transformer
+  -   understands and creates natural language
+  -   takes input or prompt to return natural language virual or code response
+  -   have been trained on both natural language and billions of lines of code from public repositories.
+  -   able to generate code from natural language instructions such as code comments, and can suggest ways to complete code functions.
 
 # Azure OpenAI Service
   - patnership between Microsoft and OpenAI
