@@ -37,8 +37,12 @@
       - COCO dataset
 
 ## Label vs Feature
-  - Identifying raw data and adding one or more meaningful and informative labes or context that can be learned by ML.
-  - Labeling is the process of tagging data with known values.
+  - label
+      - Identifying raw data and adding one or more meaningful and informative labes or context that can be learned by ML.
+      - Labeling is the process of tagging data with known values.
+  - feature
+      - individual measureable property or characteristics of a phenomenon
+      - can be numerical feature or categorical features
   - Feature = Input. Label = Output.
 
 

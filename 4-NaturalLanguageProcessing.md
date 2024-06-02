@@ -109,7 +109,8 @@
                      -  prebuilt neural voice
                      -  custom neural voice
          -  Speaker recognition
-         -  Speech translation         -  
+         -  Speech translation
+               -  only available in SDK  
          -  Pronunciation assessment
          -  Intent recognition
 

@@ -208,6 +208,7 @@ Data Labeling >> Feature Enginering >> Training >> Hyperparameter tuning >> Serv
         - pipelines
     - azure machine learning designer
         - drag and drop interface to visually build test and deploy ML models
+        - can use Python and R to write custom code
     - data and compute maanagement
     - Azure ML SDK for python
         - desgined specifically to interact with Azure ML service
