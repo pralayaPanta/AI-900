@@ -1,5 +1,6 @@
 - [Fundamental of Machine Learning](#fundamental-of-machine-learning)
     - [Types of Machine Learning](#types-of-machine-learning)
+    - [Reinforcement Learning](#reinforcement-learning)
     - [Supervised machine learning](#supervised-machine-learning)
       - [Regression](#regression)
         - [Regression Evaluation Metrics](#regression-evaluation-metrics)
@@ -8,10 +9,21 @@
     - [Multiclass Classification](#multiclass-classification)
     - [Unsupervised machine learning](#unsupervised-machine-learning)
       - [Clustering](#clustering)
+    - [Anamoly detection](#anamoly-detection)
     - [Deep Learning](#deep-learning)
       - [How does a neural network learn?](#how-does-a-neural-network-learn)
-  - [Azure Machine Learning](#azure-machine-learning)
-    - [Azure Machine Learning Studio](#azure-machine-learning-studio)
+  - [ML Pipelines](#ml-pipelines)
+  - [Forecasing and prediction](#forecasing-and-prediction)
+- [Azure Machine Learning](#azure-machine-learning)
+    - [Azure ML Studio - Compute](#azure-ml-studio---compute)
+    - [Azure ML Studio - Data labeling](#azure-ml-studio---data-labeling)
+    - [Azure ML Studio - Data Store](#azure-ml-studio---data-store)
+    - [Azure ML workspace](#azure-ml-workspace)
+    - [Azure ML Endpoints](#azure-ml-endpoints)
+    - [Azure AutoML](#azure-automl)
+    - [Azure Machine Learning Studio (classic)](#azure-machine-learning-studio-classic)
+  - [Data Modeling steps](#data-modeling-steps)
+  - [Automated Machine Learning](#automated-machine-learning)
   
 
 # Fundamental of Machine Learning
@@ -58,19 +70,19 @@ Steps involved:
     - **Classification**
   
 #### Regression
-  - Form of supervised machine learning in which the labels predicted by the model is in _numberic value._
+  - Form of supervised machine learning in which the labels predicted by the model is in _numberic value_
   - Example
       - the number of ice creams sold on a given day, based on the temperature, rainfall, and windspeed.
       - predicting the sea level in meters for the next 10 years
       - number of gift cards selling next month
   
-  - Regression models are trained to predict numeric lable values based on training data taht includes both features and known labels.
+  - Regression models are trained to predict numeric label values based on training data taht includes both features and known labels.
   - Uses algorithm like linear regression
   
   ##### Regression Evaluation Metrics
   - Mean Absolute Error MAE
   - Mean Squared Error MSE
-  - Root Mean Squared Error RMSE\
+  - Root Mean Squared Error RMSE
       - The Residual histogram presents the frequency of residual values distribution. Residual is the difference between predicted and actual values. It represents the amount of error in the model.
       - If we have a good model, we should expect that most of the errors are small. They will cluster around 0 on the Residual histogram.
   - Coefficient of determinatino R^2 
@@ -81,11 +93,17 @@ Steps involved:
   - evaluation metrics assess model performance by comparing predicted classes to the actual classes
     - Example
         - a banking system that predicts whether a loan will be repaid
-  
+    - algorithms
+        - logistic regression
+        - decision tree and random forest
+        - neural networks
   - Types
       - **Binary Classification**
       - **Multiclass Classification**
-
+  - confusion matrix
+      - table to visualise the model predictions vs ground truth labels
+      - error matrix
+      - 
 #### Binary Classification
   - label determines whether the observed item is or is not (1 or 0) an instance of a specific class
   - like true false or positive negative predictions
@@ -112,6 +130,7 @@ Steps involved:
     - anamoly detection
   
 #### Clustering
+- grouping unlabeled data based on similarities and differences
 - identifies similarities between observations based on their features, and groups them into discrete clusters.
 - most common clustering algorithm is **_K-mean_** clustering
 - Example
@@ -123,6 +142,13 @@ Steps involved:
     - maximum distance to cluster center
     - silhouette
 
+### Anamoly detection
+  - the process of finding outliers within a dataset called an anomaly
+  - data or patterns appear suspcious or malicious
+  - ex
+      - intrusion detection
+      - fraud detection
+      - systems health monitoring
 
 ### Deep Learning
 - advanced form of machine learning that tries to emulate learning process of human brain
@@ -153,31 +179,87 @@ Steps involved:
 6.  The changers to the weights are backpropagated to the layers in the network, replacing the previously used values.
 7.  The process is repated over multiple iterations known as epochs until the loss is minimized and the model predicts acceptably accurately.
 
-## Azure Machine Learning
-Cloud service for training, deploying, and managing machine learning models.
-- The primary resource required is Azure Machine Learning Workspace
-- Features
-    - automated machine learning
-    - azure machine learning designer
-    - data and compute maanagement
-    - pipelines
+## ML Pipelines
+Data Labeling >> Feature Enginering >> Training >> Hyperparameter tuning >> Serving >> Inference (real-time endpoint or batch processing)
 
-### Azure ML workspace
-- workspaces are places to collaborate with colleage to create ML artifacts and group related work
-
-### Azure Machine Learning Studio
-- browser based portal for managing ML resources and jobs
-  
-  Exercise: [Use automated machine learning to train a model](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
-
-### Azure Machine Learning Designer
-
-## Additional Notes
   - Model evaluation
       - The Model evaluation module outputs a confusion matrix showing the number of true positives, false negatives, false positives, and true negatives, as well as ROC, Precision/Recall, and Lift curves.
   - Feature Engineering
       - process of using domain knowledge fo the data to create feature that help algorithms learn better
       - in Azure ML, scaling and normalisation are used
+
+## Forecasing and prediction
+- forecasting
+    - prediction with relevant data
+    - analysis of trends
+    - not guessing
+- prediction
+    - future prediction without relevant data
+    - uses statistics to predict future outcomes
+    - uses decision theory
+
+# Azure Machine Learning
+- Cloud service for training, deploying, and managing machine learning models.
+- The primary resource required is Azure Machine Learning Workspace
+- Features
+    - automated machine learning
+        - MLOps
+        - end to end automation of ML model pipelines
+        - pipelines
+    - azure machine learning designer
+        - drag and drop interface to visually build test and deploy ML models
+    - data and compute maanagement
+    - Azure ML SDK for python
+        - desgined specifically to interact with Azure ML service
+    - Juptyer notebooks
+        - build and document ML models    
+  
+### Azure ML Studio - Compute
+- 4 kinds of compute
+    - compute instances
+    - compute clusters
+    - inference clusters
+    - attached compute
+
+### Azure ML Studio - Data labeling
+- types of labeling
+  - Human in the loop labelling
+  - Machine learning assisted labeling
+
+### Azure ML Studio - Data Store
+- securely connect to your storage service on azure
+- types
+    - blob storage
+    - file share
+    - data lake storage
+    - Azure SQL database
+    - Azure Postgres database
+    - Azure MySQL Database
+
+### Azure ML workspace
+- workspaces are places to collaborate with colleage to create ML artifacts and group related work
+
+### Azure ML Endpoints
+- allows you to deploy machine learning models as a web serivce
+- types:
+    - realtime endpoints
+        - Uses AKS and ACI
+    - pipeline endpoints
+        - uses an ML pipeline
+
+### Azure AutoML
+- automates the process of creating ML model
+- you supply a dataset, choose a task type and then autoML will train and tune model
+- types of task
+    - classification: binary or multi class classfication
+    - regression: numerical data
+    - time series forecasting: value based on time, multivariate regression model
+- Data Guard Rails
+    - automatic featurisation: scaling or normalisation techniques
+    - sequence of checks to ensure high quality data
+  
+### Azure Machine Learning Studio (classic)
+- old one, - do not have pipleine
 
 ## Data Modeling steps
   - Feature selection

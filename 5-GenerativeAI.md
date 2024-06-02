@@ -5,10 +5,10 @@
     - [Copilots](#copilots)
     - [Copilot Studio](#copilot-studio)
     - [Azure AI Studio](#azure-ai-studio)
+    - [GPT Models](#gpt-models)
 - [Azure OpenAI Service](#azure-openai-service)
     - [Using Azure OpenAI](#using-azure-openai)
 - [Responsible GenAI](#responsible-genai)
-
 
 
 # Fundamental of Generative AI
@@ -21,12 +21,12 @@
     - Code Generation
   
 ### Language Models
-- language modesl are a specialized tyep of machine learning model that you can use to perform natural language processing tasks
+- language models are a specialized tyep of machine learning model that you can use to perform natural language processing tasks
   - NPL task examples
       - summarizing text
       - comparing multiple text sources for semantic similarity
       - generating new natural language
-- Category
+  - Category
       - Large Language Models LLMs
       - Small Language Models SLMs
 

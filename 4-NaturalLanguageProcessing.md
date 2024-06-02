@@ -5,13 +5,16 @@
     - [Semantic language models](#semantic-language-models)
     - [Azure AI Language Features](#azure-ai-language-features)
 - [Fundamentals of question answering with the Language Service](#fundamentals-of-question-answering-with-the-language-service)
-    - [Create custom question answering](#create-custom-question-answering)
+    - [Create custom question answering (QnA Maker)](#create-custom-question-answering-qna-maker)
 - [Fundamentals of conversational language understanding](#fundamentals-of-conversational-language-understanding)
     - [Azure resource for converstaional language understanding](#azure-resource-for-converstaional-language-understanding)
 - [Fundamentals of Azure AI Speech](#fundamentals-of-azure-ai-speech)
     - [Use speech in application](#use-speech-in-application)
+    - [services in live speech translation](#services-in-live-speech-translation)
     - [Azure AI Translator](#azure-ai-translator)
     - [Azure resources for Azure AI Speech](#azure-resources-for-azure-ai-speech)
+  - [Text Analytics](#text-analytics)
+  - [Azure Bot Service](#azure-bot-service)
 - [Common NLP tasks supported by language models include:](#common-nlp-tasks-supported-by-language-models-include)
 
 
@@ -60,14 +63,19 @@
   -  **Azure AI Language:** includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
   -  **Azure AI Bot Service:** provides a framework for developing, publishing, and managing bots on Azure.
 
-### Create custom question answering
+### Create custom question answering (QnA Maker)
   - can use Azure AI Language Studio to create, train, publish, and manage question answering projects
-  - first provision a Language resource in Azure
-  - Define questions and answers
-  - Test the projects
+  - can build knowledge base from an existing document manual or website
+  - uses ML to extract question and answer pairs
+  - data is stored in azure search
+  - multi turn converstaion
+      - follow up prompts and context to manage the multiple turns for your bot from one question to another
+  - steps:
+    - first provision a Language resource in Azure
+    - Define questions and answers
+    - Test the projects
   
 # Fundamentals of conversational language understanding
-
   - Utterances, Entities and Intent
       - An utterance is an example of something a user might say, and which your application must interpret. 
       - An entity is an item to which an utterance refers.
@@ -121,6 +129,7 @@
    - speech correction >>
    - machine translation >>
    - text to speech >> voice output
+  
 ### Azure AI Translator
    - cloud based service that uses AI to reliably translate text and documents between languages in near real time.
    - 90 languages and dialects
@@ -140,9 +149,40 @@
 - A Speech resource - choose this resource type if you only plan to use Azure AI Speech, or if you want to manage access and billing for the resource separately from other services.
 - An Azure AI services resource - choose this resource type if you plan to use Azure AI Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
 
+## Text Analytics
+  - can perform
+      - sentiment analysis
+          - find out what people think of your topic
+          - applies labels and confidence score to text at the sentence and document level
+          - labels include negative, positive, mixed or neutral
+          - confidence scores ranging from 0 to 1
+      - opinion mining
+          - aspect based sentiment analysis
+          - granular information about the opinions related to aspects
+      - key phrase extraction
+        - quick identification of the main concept of the text
+        - 
+      - language detection
+        - detect the language an input text is written in
+      - named entity recognition
+        - identify and categorise entities in your text
+        - workds and prahses mentioned in unstructured text
+        - subset of NER
+            - Personally Identifiable Information PII
+
+## Azure Bot Service
+  - used for creating publishing and managing bots
+  - register and publish variety from azure portal
+  - Bot Framework SDK v4 is an open source SDK
+  - Bot framework composer
+    - open source IDE for developer to author test provision and manage
+    - can use either C or Node to build your bot
+  
 # Common NLP tasks supported by language models include:
 - _Text analysis_, such as extracting key terms or identifying named entities in text.
 - _Sentiment analysis_ and opinion mining to categorize text as positive or negative.
 - _Machine translation_, in which text is automatically translated from one language to another.
 - _Summarization_, in which the main points of a large body of text are summarized.
 - _Conversational AI solutions_ such as bots or digital assistants in which the language model can interpret natural language input and return an appropriate response.
+
+

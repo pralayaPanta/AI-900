@@ -15,13 +15,21 @@ Table of Content
 # Fundamental of Computer Vision
 
 Area of AI focusing on creating solutions that enable AI applications to see the world and make sense of it.
+- Algorithms:
+    - convolutional neural network CNN
+    - recurrent neural network RNN
 
 ##### Review Computer vision models
 - _image classification_ - classify images based on contents
 - _object detection_ - classify individual objects within an image and and identify their location with a bounding box.
+    - information 
+        - bounding box
+        - class name
+        - probability score
 - _semantic segmentation_ - classify individual pixels
-      - provides the ability to classify individual pixels in an image depending on the object that they represent.
+    - provides the ability to classify individual pixels in an image depending on the object that they represent.
 - _image analysis_ - model to extract information from images
+      - example: an employee sitting at a desk in office
 - _face detection and recognition_ - locates human faces in an image
 - _optioncal character recognition OCR_ - detect and read text in images
 
@@ -82,6 +90,30 @@ Area of AI focusing on creating solutions that enable AI applications to see the
 
 # Fundamental of Optical Character Recognition
 - OCR is the capability of AI to process words in images into machine readable text.
+- two API:
+    - OCR API
+        - older recognition model and supports only images
+    - Read API
+        - newer and supports images and PDFs
+- OCR uses computer vision SDK
+
+### Azure Form Recogniser
+- specialise OCR service translates printed text into digital and editable content
+- preserves structure and relationship of form like data
+- key value pairs, selection marks, table structure
+- models type
+  - Form recogniser service - custom model
+      - extract key value pairs, selection marks and table data
+      - need five sample input forms to start
+      - 2 learning options
+          - train without labels
+          - train with labels
+  - Form recogniser service - prebuilt model
+      - receipts
+      - business cards
+      - invoices
+      - IDs
+  
 
 ### Azure AI Vision OCR Engine
 
@@ -97,3 +129,14 @@ Area of AI focusing on creating solutions that enable AI applications to see the
 - Following resources can be used
     - Azure AI Vision
     - Azure AI Services
+
+### Custom Vision
+  -   fully managed no code service to quickly build own classification and object detection ML models
+  -   domain customvision.ai
+  -   upload images >> train >> evaluate
+  -   project types
+          -   classification: multi label, multi class
+          -   object detection
+  -   training model
+          -   quick training
+          -   advanced training

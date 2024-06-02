@@ -8,7 +8,7 @@
     - [Indexer](#indexer)
     - [Knowledge Store](#knowledge-store)
     - [Create an index in Azure Portal](#create-an-index-in-azure-portal)
-    - [Review](#review)
+  - [Review](#review)
 
 
 # Fundamental of Azure AI Document Intelligence
@@ -34,8 +34,14 @@
 - can recognise data on serveral type, thermal receipts, hotel receipts, gas receipts, parking receipts etc
 
 
-
 # Fundamentals of Knowledge Mining and Azure AI Search
+Knowledge mining users a combination of intelligent services to quickly learn from vast amounts of information
+  - Ingest >> Enrich >> Expore
+  - Use cases
+      - content research
+      - auditing risk and compliance management
+      - business process management
+      - customer support and feedback analysis
 
 ### What is Azure AI Search?
 - provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents.
@@ -126,7 +132,8 @@
            - simple
            - full lucene
 
-### Review
+
+## Review
 
    - _**Data Source**_: Persists connection information to source data, including credentials. A data source object is used exclusively with indexers.
    - _**Index**_: Physical data structure used for full text search and other queries.
