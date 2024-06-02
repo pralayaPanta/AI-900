@@ -15,8 +15,14 @@
 
 # Topic: Fundamental of AI Concepts
 
-### Key workloads
+
+## Layers
+- **Artificial Intellgence** - machines that performs jobs that mimic human behaviour.
 - **Machine learning -** foundation of AI, way of teaching computer model to make predictions
+    - Machines learn from data, capturing the relationship between data
+- **Deep Learning** - machine that have artificial neural network inspired by the human brain.
+
+### Key workloads
 - **Computer vision -** interpretting the world through cameras, video, and images
 - **Natural language processing** - interpretting wrriten or spoken language and its response
       - determining whether a review is  positive or negative 
@@ -25,8 +31,17 @@
 - **Knowledge mining** - extract information unstructured data to create knowledge store
 - **Generative AI**- create original content in natural language, image, code and more
 
-### Machine Learning
-- Machines learn from data, capturing the relationship between data
+### Dataset
+  - logical grouping of units of data that are closely related or share same data structure
+  - examples
+      - MNIST database
+      - COCO dataset
+
+## Label vs Feature
+  - Identifying raw data and adding one or more meaningful and informative labes or context that can be learned by ML.
+  - Labeling is the process of tagging data with known values.
+  - Feature = Input. Label = Output.
+
 
 #### Machine learning in MS Azure
 - **Automated machine learning:** quickly create an effective machine learning model from data.
@@ -40,6 +55,10 @@
 ##### Computer vision models
 - image classification - classify images based on contents
 - object detection - classify individual objects within an image and and identify their location with a bounding box.
+    - information 
+        - bounding box
+        - class name
+        - probability score
 - semantic segmentation - classify individual pixels
     - provides the ability to classify individual pixels in an image depending on the object that they represent.
 - image analysis - model to extract information from images

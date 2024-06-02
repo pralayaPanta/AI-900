@@ -32,9 +32,17 @@ Steps involved:
 ### Types of Machine Learning
 1. Supervised machine learning
 2. Unsupervised machine learning
-   
+3. Reinforcement learning
+
+### Reinforcement Learning
+- no data
+- an environment and ML model generates data to reach a goal
+- decsion-driven 
+- Game AI, Learning Tasks, Robot navigation
+  
 ### Supervised machine learning
 - training data includes both feature values and known label values.
+- task driven
 - used to train models to predict unknown labels
 - training data involves multiple iterations with appropriate algorithm, evaluation model performance and refining the model until acceptable level of predecitive accuracy.
   
@@ -53,6 +61,8 @@ Steps involved:
   - Form of supervised machine learning in which the labels predicted by the model is in _numberic value._
   - Example
       - the number of ice creams sold on a given day, based on the temperature, rainfall, and windspeed.
+      - predicting the sea level in meters for the next 10 years
+      - number of gift cards selling next month
   
   - Regression models are trained to predict numeric lable values based on training data taht includes both features and known labels.
   - Uses algorithm like linear regression
@@ -60,13 +70,17 @@ Steps involved:
   ##### Regression Evaluation Metrics
   - Mean Absolute Error MAE
   - Mean Squared Error MSE
-  - Root Mean Squared Error RMSE
+  - Root Mean Squared Error RMSE\
+      - The Residual histogram presents the frequency of residual values distribution. Residual is the difference between predicted and actual values. It represents the amount of error in the model.
+      - If we have a good model, we should expect that most of the errors are small. They will cluster around 0 on the Residual histogram.
   - Coefficient of determinatino R^2 
 
 #### Classification
   - form of supervised machine learning labels are category or class.
   - models calculate probability values for class assignment
   - evaluation metrics assess model performance by comparing predicted classes to the actual classes
+    - Example
+        - a banking system that predicts whether a loan will be repaid
   
   - Types
       - **Binary Classification**
@@ -91,14 +105,18 @@ Steps involved:
   
 ### Unsupervised machine learning
 - training data includes only features values without any known labels
+- data-driven
 - determine relationships between the features of the observations in the training data
 - Types
     - **Clustering**
+    - anamoly detection
   
 #### Clustering
 - identifies similarities between observations based on their features, and groups them into discrete clusters.
+- most common clustering algorithm is **_K-mean_** clustering
 - Example
     - group of similar flowers based on their size, numbers of leaves, and number of petals
+    - A medical research project uses a large anonymized dataset of brain scan images that are categorized into predefined brain haemorrhage types. You need to use machine learning to support early detection of the different brain haemorrhage types in the images before the images are reviewed by a person.
 - Metrics
     - average distance to cluster center
     - average distance to other center
@@ -108,11 +126,23 @@ Steps involved:
 
 ### Deep Learning
 - advanced form of machine learning that tries to emulate learning process of human brain
-- creation of an artificial neural network
+- creation of an artificial **neural network**
   - are made up of multiple layers of neurons - deeply nested function
-  - each nuron is a function that operates on an input value and a **weight**
+    - input layers >> hidden layers >> ouput layers
+  - each neuron is a function that operates on an input value and a **weight**
   - the function is wrapped in an activation function that determines whether to pass the output on
   - deep neural network DNNs
+- What is Feed Forward FNN?
+  - Neural Networks where connections between nodes do not form a cycle 
+    - always move forward
+- What is Backpropagation BP?
+  - Moves backwards through the neural network adjusting weights to improve outcome in next iterations
+- Loss function
+  - a function that compares the ground truth to the prediction to determine the error rate 
+  - essentially, how bad the network performed
+- Activation function  - an algorithm applied to a hidden layer node that affects connected output eg ReLu
+- Dense   - when the next layer increases the amount of nodes
+- Sparse  - when the next layer decreases the amount of nodes
   
 #### How does a neural network learn?
 1.  The training and validation datasets are defined, and the training features are fed into the input layer.
@@ -123,13 +153,51 @@ Steps involved:
 6.  The changers to the weights are backpropagated to the layers in the network, replacing the previously used values.
 7.  The process is repated over multiple iterations known as epochs until the loss is minimized and the model predicts acceptably accurately.
 
-
 ## Azure Machine Learning
 Cloud service for training, deploying, and managing machine learning models.
 - The primary resource required is Azure Machine Learning Workspace
+- Features
+    - automated machine learning
+    - azure machine learning designer
+    - data and compute maanagement
+    - pipelines
 
+### Azure ML workspace
+- workspaces are places to collaborate with colleage to create ML artifacts and group related work
 
 ### Azure Machine Learning Studio
 - browser based portal for managing ML resources and jobs
   
   Exercise: [Use automated machine learning to train a model](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html)
+
+### Azure Machine Learning Designer
+
+## Additional Notes
+  - Model evaluation
+      - The Model evaluation module outputs a confusion matrix showing the number of true positives, false negatives, false positives, and true negatives, as well as ROC, Precision/Recall, and Lift curves.
+  - Feature Engineering
+      - process of using domain knowledge fo the data to create feature that help algorithms learn better
+      - in Azure ML, scaling and normalisation are used
+
+## Data Modeling steps
+  - Feature selection
+  - Finding and removing data outliers
+  - Impute missing values
+  - Normalize numeric features
+
+You have a dataset that contains information about taxi journeys that occurred during a given period.
+You need to train a model to predict the fare of a taxi journey.
+What should you use as a feature?
+
+ANS:
+The label is the column you want to predict. The identified Featuresare the inputs you give the model to predict the Label.
+Example:
+The provided data set contains the following columns:
+vendor_id: The ID of the taxi vendor is a feature.
+rate_code: The rate type of the taxi trip is a feature.
+passenger_count: The number of passengers on the trip is a feature. trip_time_in_secs: The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment, you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model. trip_distance: The distance of the trip is a feature. payment_type: The payment method (cash or credit card) is a feature. fare_amount: The total taxi fare paid is the label.
+Reference:
+https://docs.microsoft.com/en-us/dotnet/machine-learning/tutorials/predict-prices
+
+
+## Automated Machine Learning

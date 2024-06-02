@@ -116,7 +116,11 @@
        - available in many programming languages and across all platforms
        - if cant use SDK, use REST APIs
 
-
+### services in live speech translation
+   - voice input >> speech to text >>
+   - speech correction >>
+   - machine translation >>
+   - text to speech >> voice output
 ### Azure AI Translator
    - cloud based service that uses AI to reliably translate text and documents between languages in near real time.
    - 90 languages and dialects
